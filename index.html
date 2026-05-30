@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=https://querykey.emmaleonhart.com/">
 <meta name="robots" content="noindex">
-<link rel="canonical" href="https://querykey.emmaleonhart.com/">
 <title>Redirecting…</title>
-<script>window.location.replace("https://querykey.emmaleonhart.com/");</script>
+<script>
+(function () {
+  var base = "https://querykey.emmaleonhart.com";
+  var dest = base + window.location.pathname + window.location.search + window.location.hash;
+  window.location.replace(dest);
+})();
+</script>
 </head>
 <body>
-<p>Redirecting to <a href="https://querykey.emmaleonhart.com/">https://querykey.emmaleonhart.com/</a>…</p>
+<p>Redirecting… If you are not redirected automatically,
+<a id="go" href="https://querykey.emmaleonhart.com/">click here</a>.</p>
+<script>
+document.getElementById("go").href =
+  "https://querykey.emmaleonhart.com" + window.location.pathname + window.location.search + window.location.hash;
+</script>
 </body>
 </html>
